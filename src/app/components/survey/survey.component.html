@@ -1,0 +1,8 @@
+<div style="text-align:center">
+    <h1>
+        Surveys!
+    </h1> 
+</div>
+<ul>
+    <li *ngFor="let survey of surveys "><a [routerLink]="['/survey-details', survey.id]">{{survey.title}}</a></li>
+</ul>
